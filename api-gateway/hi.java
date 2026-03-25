@@ -1,4 +1,4 @@
-package order-service;
+package api-gateway;
 
 public class hi {
     

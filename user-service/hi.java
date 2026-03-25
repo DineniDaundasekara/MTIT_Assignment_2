@@ -1,4 +1,4 @@
-package order-service;
+package user-service;
 
 public class hi {
     
