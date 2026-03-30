@@ -35,6 +35,14 @@ public class ProductService {
             product.setPrice(updatedProduct.getPrice());
             product.setStock(updatedProduct.getStock());
             product.setCategory(updatedProduct.getCategory());
+            product.setBrand(updatedProduct.getBrand());
+            product.setSku(updatedProduct.getSku());
+            product.setImageUrl(updatedProduct.getImageUrl());
+            product.setWeight(updatedProduct.getWeight());
+            product.setColor(updatedProduct.getColor());
+            product.setSize(updatedProduct.getSize());
+            product.setDiscount(updatedProduct.getDiscount());
+            product.setIsAvailable(updatedProduct.getIsAvailable());
             return productRepository.save(product);
         }).orElseThrow(() -> new RuntimeException("Product not found with id " + id));
     }

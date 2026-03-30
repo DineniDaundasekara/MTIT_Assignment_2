@@ -31,10 +31,16 @@ public class UserService {
     public User updateUser(Long id, User updatedUser) {
         return userRepository.findById(id).map(user -> {
             user.setName(updatedUser.getName());
+            user.setUsername(updatedUser.getUsername());
             user.setEmail(updatedUser.getEmail());
             user.setPassword(updatedUser.getPassword());
             user.setPhone(updatedUser.getPhone());
             user.setAddress(updatedUser.getAddress());
+            user.setCity(updatedUser.getCity());
+            user.setPostalCode(updatedUser.getPostalCode());
+            user.setCountry(updatedUser.getCountry());
+            user.setRole(updatedUser.getRole());
+            user.setIsActive(updatedUser.getIsActive());
             return userRepository.save(user);
         }).orElseThrow(() -> new RuntimeException("User not found with id " + id));
     }
