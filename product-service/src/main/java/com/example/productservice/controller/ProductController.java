@@ -6,6 +6,7 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 import java.util.Optional;
+//ProductController handles all HTTP requests related to Product operations
 
 @RestController
 @RequestMapping("/products")
