@@ -24,6 +24,7 @@ public class ProductController {
     }
 
     @GetMapping
+    //Fetch a single product by its ID
     public List<Product> getAllProducts() {
         return productService.getAllProducts();
     }
