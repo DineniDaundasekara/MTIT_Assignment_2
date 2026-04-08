@@ -9,8 +9,9 @@ import java.util.Optional;
 //ProductController handles all HTTP requests related to Product operations
 
 @RestController
-@RequestMapping("/products")
-@CrossOrigin("*")
+@RequestMapping("/products")// Base URL for all product-related endpoints
+@CrossOrigin("*")// Allows frontend apps from any origin to access this API
+
 public class ProductController {
 
     private final ProductService productService;
