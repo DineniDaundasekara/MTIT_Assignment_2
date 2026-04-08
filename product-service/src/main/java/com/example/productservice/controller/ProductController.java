@@ -12,9 +12,11 @@ import java.util.Optional;
 @RequestMapping("/products")// Base URL for all product-related endpoints
 @CrossOrigin("*")// Allows frontend apps from any origin to access this API
 
-public class ProductController {
 
+public class ProductController {
+//Service layer object used to perform business logic
     private final ProductService productService;
+    //Constructor-based dependency injection
 
     public ProductController(ProductService productService) {
         this.productService = productService;
