@@ -22,7 +22,7 @@ public class ProductController {
         this.productService = productService;
         //Fetch all products from the database
     }
-//database crud poerations 
+//database crud operations for products 
     @GetMapping
     //Fetch a single product by its ID
     public List<Product> getAllProducts() {
